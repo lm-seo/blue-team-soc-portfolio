@@ -3,9 +3,13 @@ In this Sherlock, you will familiarize yourself with Sysmon logs and various use
 
 ### Task 1 How many Event logs are there with Event ID 11?
 It is important to start by managing the information provided by evtx. I like to process the information using Eric Zimmerman's tool [EvtxCmd.exe](https://github.com/EricZimmerman/evtx), export it to CSV, and use [CSV Quick Viewer](https://sourceforge.net/projects/csvquickviewer/) to manage the information.
+
+![Formateo a CSV con Evtxcmd.exe](/05-ctf-writeup/HTB-Unit-42//pre-lab-01.png)
+![Uso de tool CSV quick viewer](/05-ctf-writeup/HTB-Unit-42/pre-lab-02.png)
+
 This answer is simple. All I did to obtain this information was filter it by event ID.
 
-- **Solution**: Filter by EventID --> 56
+- Filter by EventID 11 --> **Solution**: 56
 ### Task 2: Whenever a process is created in memory, an event with Event ID 1 is recorded with details such as command line, hashes, process path, parent process path, etc. This information is very useful for an analyst because it allows us to see all programs executed on a system, which means we can spot any malicious processes being executed. What is the malicious process that infected the victim's system?
 For this question, it is important to know and be able to recognize, among all the information presented, which file is potentially strange.
 We continue with event ID 11. Remember that Sysmon Event ID 11, also known as “FileCreate,” logs file creation or overwrite operations on a system.
