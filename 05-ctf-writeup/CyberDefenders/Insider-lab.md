@@ -33,7 +33,6 @@ As a security analyst, the task is to examine the image, identify relevant artif
 **Explanation:**  
 System-related artifacts found in boot and configuration directories clearly indicate that the operating system installed on the machine is Kali Linux.
 
----
 
 ### Q2 — MD5 hash of `access.log`
 
@@ -43,15 +42,11 @@ The MD5 hash was obtained directly from the Apache `access.log` file.
 **How it was identified:**  
 FTK Imager was used to calculate and export file hashes, allowing direct identification of the MD5 value associated with this specific log file.
 
----
-
 ### Q3 — Credential dumping tool name
 
 **Answer:** `mimikatz_trunk.zip`  
 **Reasoning:**  
 This file appears in the root user’s download directory. Its name matches a well-known credential dumping tool commonly used for extracting authentication material.
-
----
 
 ### Q4 — Absolute path of the “super secret” file
 
@@ -61,7 +56,6 @@ This file appears in the root user’s download directory. Its name matches a we
 **Explanation:**  
 Although the file is not immediately visible, its creation and location are referenced in the Bash command history, which reveals the full absolute path.
 
----
 
 ### Q5 — Tool used on `didyouthinkwedmakeiteasy.jpg`
 
@@ -69,7 +63,6 @@ Although the file is not immediately visible, its creation and location are refe
 **Explanation:**  
 The Bash history shows Binwalk being executed against this image file, indicating it was analyzed for embedded data or hidden content.
 
----
 
 ### Q6 — Third goal in Karen’s checklist
 
@@ -77,15 +70,11 @@ The Bash history shows Binwalk being executed against this image file, indicatin
 **How it was found:**  
 A checklist file located on the desktop contains several listed objectives. The third entry in this list is “Profit”.
 
----
-
 ### Q7 — Number of times Apache was executed
 
 **Answer:** `0`  
 **Justification:**  
 Apache log files exist but contain no activity entries, indicating the web service was never executed on this system.
-
----
 
 ### Q8 — Evidence of an attack on another machine
 
@@ -93,7 +82,6 @@ Apache log files exist but contain no activity entries, indicating the web servi
 **Explanation:**  
 This image provides visual evidence suggesting interaction with another system, consistent with offensive or unauthorized activity.
 
----
 
 ### Q9 — Person Karen was mocking
 
@@ -101,7 +89,6 @@ This image provides visual evidence suggesting interaction with another system, 
 **Reasoning:**  
 A Bash script stored in the documents directory prints a message containing this name in a mocking or taunting context.
 
----
 
 ### Q10 — User who escalated privileges to root at 11:26
 
@@ -109,7 +96,6 @@ A Bash script stored in the documents directory prints a message containing this
 **Evidence:**  
 Authentication logs (`auth.log`) show multiple `su` events initiated by the `postgres` user around the specified time.
 
----
 
 ### Q11 — Current working directory from Bash history
 
@@ -118,8 +104,6 @@ Authentication logs (`auth.log`) show multiple `su` events initiated by the `pos
 
 **Explanation:**  
 This path is the last recorded working directory in the user’s Bash command history.
-
----
 
 ## Tools Used
 
