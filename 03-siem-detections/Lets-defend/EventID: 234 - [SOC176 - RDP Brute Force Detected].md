@@ -2,16 +2,16 @@
 
 ## Initial info
 
-EventID : 234
-Event Time : Mar, 07, 2024, 11:44 AM
-Rule : SOC176 - RDP Brute Force Detected
-Level : Security Analyst
-Source IP Address : 218.92.0.56
-Destination IP Address : 172.16.17.148
-Destination Hostname : Matthew
-Protocol : RDP
-Firewall Action : Allowed
-Alert Trigger Reason : Login failure from a single source with different non existing accounts
+- EventID : 234
+- Event Time : Mar, 07, 2024, 11:44 AM
+- Rule : SOC176 - RDP Brute Force Detected
+- Level : Security Analyst
+- Source IP Address : 218.92.0.56
+- Destination IP Address : 172.16.17.148
+- Destination Hostname : Matthew
+- Protocol : RDP
+- Firewall Action : Allowed
+- Alert Trigger Reason : Login failure from a single source with different non existing accounts
 
 ## Playbook: 
 
