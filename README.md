@@ -3,6 +3,12 @@
 This repository showcases my practical skills as a SOC Analyst L1, including incident investigations, SIEM detections, home lab engineering, forensics, and network analysis.
 All the work here is based on realistic scenarios built in my own defensive home lab using Splunk, Wazuh, pfSense, Windows & Linux endpoints, and attacker simulations.
 
+## CTFs Accounts:
+- [Let's Defend](https://app.letsdefend.io/user/LuisSEO)
+- [Try Hack Me](https://tryhackme.com/p/LSEO)
+- [BTLO](https://blueteamlabs.online/home/user/96a07ea715160b5eacb1f7)
+- [Cyber Defenders](https://cyberdefenders.org/p/lseo)
+
 ## 🔍  What You Will Find Here
 ### 1. Home Lab Architecture
 
