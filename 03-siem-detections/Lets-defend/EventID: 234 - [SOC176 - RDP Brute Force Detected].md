@@ -1,4 +1,4 @@
-#EventID: 234 - [SOC176 - RDP Brute Force Detected]
+# EventID: 234 - [SOC176 - RDP Brute Force Detected]
 
 ## Initial info
 
