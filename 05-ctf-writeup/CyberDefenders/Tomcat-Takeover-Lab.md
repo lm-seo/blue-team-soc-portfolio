@@ -52,7 +52,7 @@ Filtering in wireshark with (http && http.user_agent == "gobuster/3.6"), looking
 
 For this type of questions, i always use (htpp.auhorization),the filter shows when there is clear authentication (for http). In this ocasion, the attacker try vrious combinations.
 
-![Q6-tomcat](06-ctf-writeup/CyberDefenders/images/tomcat-q6.png)
+![Q6-tomcat](05-ctf-writeup/CyberDefenders/images/tomcat-q6.png)
 
 ## Q7: Once inside the admin panel, the attacker attempted to upload a file with the intent of establishing a reverse shell. Can you identify the name of this malicious file from the captured data?
 
